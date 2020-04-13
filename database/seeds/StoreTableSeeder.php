@@ -10,7 +10,7 @@ class StoreTableSeeder extends Seeder
        $faker = Faker\Factory::create();        
 
        for ($i=1; $i <=100 ; $i++) { 
-        $name = $faker->unique()->company;
+            $name = $faker->unique()->company;
             $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $name)));
             DB:: table('stores')-> insert([ 
                 'user_id' => (101 - $i),
@@ -18,7 +18,9 @@ class StoreTableSeeder extends Seeder
                 'description' => $faker->text($maxNbChars = 200),
                 'phone' => $faker->tollFreePhoneNumber,
                 'mobile_phone' => $faker->e164PhoneNumber,
-                'slug' => $slug
+                'slug' => $slug,
+                'created_at' => now(),
+                'updated_at' => now(),
             ]);    
        }  
     }

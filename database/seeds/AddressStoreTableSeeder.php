@@ -21,6 +21,8 @@ class AddressStoreTableSeeder extends Seeder
                 'city' => $faker->city,
                 'state' => $faker->state,
                 'postcode' => $faker->postcode,
+                'created_at' => now(),
+                'updated_at' => now(),
              ]);    
         }  
     }
