@@ -54,6 +54,15 @@ footer {
   text-align: center;
 }
 
+.pagination .page-item a {
+  color: #686868 !important;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #343a40 !important;
+  border: 1px solid #343a40 !important;
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
