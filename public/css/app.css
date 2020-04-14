@@ -34,10 +34,6 @@
   width: 81%;
 }
 
-.pagination {
-  margin-top: 20px;
-}
-
 .main-menu {
   margin-bottom: 30px;
 }
@@ -52,6 +48,10 @@ footer {
   margin-top: 40px;
   color: #c4c4c4;
   text-align: center;
+}
+
+.pagination {
+  margin-top: 20px;
 }
 
 .pagination .page-item a {
